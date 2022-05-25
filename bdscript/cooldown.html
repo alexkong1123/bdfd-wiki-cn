@@ -141,22 +141,22 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="cooldown"><a class="header" href="#cooldown">$cooldown</a></h1>
-<p>Sets a cooldown. The user can not run the command again, until the 'duration' is up.</p>
-<h2 id="usage"><a class="header" href="#usage">Usage</a></h2>
-<pre><code>$cooldown[duration;errorMessage]
+<p>設定一個冷卻.令用戶不能在冷卻期間再次運行指令, 除非在冷卻完結.</p>
+<h2 id="usage"><a class="header" href="#usage">格式</a></h2>
+<pre><code>$cooldown[冷卻時間;冷卻中使用的錯誤信息]
 </code></pre>
-<h3 id="breakdown"><a class="header" href="#breakdown">Breakdown</a></h3>
+<h3 id="breakdown"><a class="header" href="#breakdown">分解</a></h3>
 <ul>
-<li><code>duration</code> - The duration of this cooldown. (e.g <code>30s</code>, <code>3m</code>, <code>3h</code>, <code>3d</code>, etc)</li>
-<li><code>errorMessage</code> - The message that is returned when the cooldown duration is still ongoing. <code>%time%</code> and other related functions can be used here.</li>
+<li><code>duration</code> - 冷卻時間. (e.g <code>30s</code>, <code>3m</code>, <code>3h</code>, <code>3d</code>, etc)</li>
+<li><code>errorMessage</code> - 冷卻中使用的錯誤信息. <code>%time%</code> 可以用在指令中.</li>
 </ul>
 <blockquote>
-<p>🧙‍♂️ <code>%time%</code> returns how much time is left on the cooldown.</p>
+<p>🧙‍♂️ <code>%time%</code> 會說出冷卻剩下的時間.</p>
 </blockquote>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
 Hi!
-$cooldown[30s;Please wait %time%, then use that command again!]
+$cooldown[30s;請等待%time%,之後再次使用該指令!]
 </code></pre>
 
                     </main>

@@ -140,22 +140,21 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="addfield"><a class="header" href="#addfield">$addField</a></h1>
-<p>Adds a field to the embed.</p>
+                      =  <h1 id="addfield"><a class="header" href="#addfield">$addField</a></h1><p>向嵌入添加一個字段.</p>
 <h2 id="usage"><a class="header" href="#usage">Usage</a></h2>
-<pre><code>$addField[name;value;(optional) inline (yes/no)]
+<pre><code>$addField[名字;變數;(optional) inline (yes/no)]
 </code></pre>
 <h3 id="breakdown"><a class="header" href="#breakdown">Breakdown</a></h3>
 <ul>
-<li><code>name</code> - The name of the field.</li>
-<li><code>value</code> - The value of the field.</li>
-<li><code>inline</code> - If 'yes', fields will appear in same line. However, if you have more than 3 fields (or the fields are just too long) with inline enabled, the bot will return rows with 3 fields (2 if there is a thumbnail) in each row. 'no' by default. Optional.</li>
+<li><code>name</code> - 字段的名字.</li>
+<li><code>value</code> - 字段中的變數.</li>
+<li><code>inline</code> - 如果是'yes', 名字就會發現在同一行. 當然, 你有多於3個朋友(意思是排名太長) , 機器人將返回包含 3 個字段的行(二是排名是縮略圖也會) 以上情況多是打了'no'.</li>
 </ul>
 <blockquote>
-<p>🧙‍♂️ Inline fields may not appear inline on some mobile devices.</p>
+<p<p>🧙‍♂在某些移動設備上，內聯字段可能不會內聯顯示es.</p>
 </blockquote>
-<h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
-<h3 id="example-1"><a class="header" href="#example-1">Example #1</a></h3>
+<h2 id="examples"><a class="header" href="#examples例子es</a></h2>
+<h3 id="example-1"><a class="header" href="#example-1例子 #1</a></h3>
 <p><em>(without inline fields)</em></p>
 <pre><code>$nomention
 $addField[This is the field name! #1;This is the field value! #1]
@@ -163,8 +162,8 @@ $addField[This is the field name! #2;This is the field value! #2]
 $addField[This is the field name! #3;This is the field value! #3]
 </code></pre>
 <p><img src="https://user-images.githubusercontent.com/69215413/125877161-79acfd73-94a8-43c8-96dc-e6b74a7d5a01.png" alt="example1" /></p>
-<h3 id="example-2"><a class="header" href="#example-2">Example #2</a></h3>
-<p><em>(with inline fields)</em></p>
+<h3 id="example-2"><a class="header" href="#example-2例子 #2</a></h3>
+<p><em帶有內聯字段ds)</em></p>
 <pre><code>$nomention
 $addField[This is the field name! #1;This is the field value! #1;yes]
 $addField[This is the field name! #2;This is the field value! #2;yes]
