@@ -140,23 +140,23 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="character-escaping"><a class="header" href="#character-escaping">Character Escaping</a></h1>
-<p><em>(for advanced users)</em></p>
-<p><strong>What Are Escape Characters?</strong></p>
-<p>Escape characters are used to indicate that the character should not be interpeted as a modifaction of the code, rather just text that appears in the code or bot's response. Basically, escape characters let your bot return the function-triggering characters (e.g <code>;</code>, <code>$</code>, <code>[</code>, <code>]</code>) without any changes to the code.</p>
-<h2 id="escapable-characters"><a class="header" href="#escapable-characters">Escapable Characters</a></h2>
-<table><thead><tr><th>Character</th><th>Escaped</th></tr></thead><tbody>
+                        <h1 id="character-escaping"><a class="header" href="#character-escaping">字符轉義</a></h1>
+<p><em>(對於高級用戶)</em></p>
+<p><strong>什麼是轉義字符?</strong></p>
+<p>轉義字符用於指示該字符不應被解釋為代碼的修改，而只是出現在代碼或機器人響應中的文本。基本上，轉義字符讓您的機器人返回函數觸發字符(e.g <code>;</code>, <code>$</code>, <code>[</code>, <code>]</code>) 無需對代碼進行任何更改。</p>
+<h2 id="escapable-characters"><a class="header" href="#escapable-characters">字符轉義</a></h2>
+<table><thead><tr><th>字符</th><th>轉義</th></tr></thead><tbody>
 <tr><td>;</td><td>%{-SEMICOL-}%</td></tr>
 <tr><td>$</td><td>%{DOL}%</td></tr>
 <tr><td>[</td><td>\[</td></tr>
 <tr><td>]</td><td>%ESCAPED%</td></tr>
 </tbody></table>
-<h2 id="example"><a class="header" href="#example">Example</a></h2>
+<h2 id="example"><a class="header" href="#example">例子</a></h2>
 <pre><code>$sendMessage[\[ Hi, this is pretty cool%{-SEMICOL-}% right? %ESCAPED%]
 </code></pre>
 <p><img src="https://user-images.githubusercontent.com/69215413/122793121-d53f1b00-d288-11eb-9fab-8594c6059786.png" alt="example" /></p>
 <blockquote>
-<p>🧙‍♂️ It's recommended that you use unstable mode when using character escaping.</p>
+<p>🧙‍♂️ 建議您在使用字符轉義時使用不穩定模式。</p>
 </blockquote>
 
                     </main>
